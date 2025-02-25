@@ -49,7 +49,7 @@ export default function CrewContent ({items}){
                 </div>
                 <div className='inner-shadow-holder'>
                     {/* <div className='inner-shadow'></div> */}
-                    <img className='img-crew' src={`/src${currentItem.images.png}`} alt='moon' width="539" height="734"/>
+                    <img className='img-crew' src={`${currentItem.images.png}`} alt='moon' width="539" height="734"/>
                 </div>
             </div>
         </>

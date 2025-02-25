@@ -16,7 +16,7 @@ export default function DestinationContent ({items}){
             </MotionSlideIn>
             <div className="page-content page-content-destination">
                 <div key={url} className="content-left">
-                    <img className='img-destination fade-in' src={`/src${currentDestination.images.webp}`} alt='moon' width="480" height="480"/>
+                    <img className='img-destination fade-in' src={`${currentDestination.images.webp}`} alt='moon' width="480" height="480"/>
                 </div>
                 <div 
                     className="details-holder">
