@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-// import { motion, AnimatePresence } from 'framer-motion';
 
 import logo from '../assets/shared/logo.svg';
 import openMenu from '../assets/shared/icon-hamburger.svg';
@@ -8,7 +7,7 @@ import closeMenu from '../assets/shared/icon-close.svg';
 
 export default function MainNavigation (){
 
-    const [activePage, setActivePage] = useState('home');
+    const [activePage, setActivePage] = useState('');
     // for defining the active page
     useEffect(() => {
         const url = window.location.href;
@@ -35,64 +34,6 @@ export default function MainNavigation (){
         setIsOpen(false)
     }
 
-    // Animate hamburger menu
-    // const modalVariants = {
-    //     hidden: {
-    //         y: '-100vh',
-    //     },
-    //     visible: {
-    //         y: 0,
-    //         transition: {
-    //             type: 'tween', 
-    //             duration: 0.3, 
-    //         },
-    //     },
-    //     exit: {
-    //         y: '-100vh',
-    //         transition: {
-    //             type: 'tween',
-    //             duration: 0.3,
-    //             delay: 0.3,
-    //         },
-    //     },
-    // };
-    // // Animate links inside the hamburger menu
-    // const linkItemVariants = {
-    //     hidden: { opacity: 0, y: '50%' },
-    //     visible: {
-    //         opacity: 1,
-    //         y: 0,
-    //         transition: {
-    //             duration: 0.5,
-    //             ease: "easeOut" 
-
-    //         },
-    //     },
-    //     exit: {
-    //         opacity: 0,
-    //         y: '50%',
-    //         transition: {
-    //             duration: 0.1,
-    //             ease: "easeOut" 
-    //         }
-    //     },
-    // };
-    // const navLinksVariants = {
-    //     hidden: {},
-    //     visible: {
-    //         transition: {
-    //             staggerChildren: 0.1,
-    //             delayChildren: 0.3,
-    //         },
-    //     },
-    //     exit: {
-    //         transition: {
-    //             staggerChildren: 0.05,
-    //             staggerDirection: -1,
-    //         },
-    //     },
-    // };
-
     return (
         <header>
             <div className='logo'>
@@ -114,11 +55,11 @@ export default function MainNavigation (){
                 
                 <ul className='nav'>
                     <li>
-                        <NavLink onClick={()=> {toggleMenu(); setActivePage('home')}}
+                        <NavLink onClick={()=> {toggleMenu(); setActivePage('')}}
                             to="/"
-                            className={() =>
-                                activePage==='home' ? 'active' : undefined
-                            }
+                            className={({ isActive }) =>
+                                isActive ? 'active' : undefined
+                              }                        
                             end
                             >
                             <span>00</span>Home
