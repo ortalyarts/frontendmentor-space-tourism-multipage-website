@@ -23,7 +23,7 @@ export default function Destinations () {
 
 // Getting content
 async function loadContent() {
-    const response = await fetch('../data/data.json');
+    const response = await fetch('../../public/data/data.json');
   
     if (!response.ok) {
       throw new Response(JSON.stringify({ message: 'Could not fetch destinations.' }), {
