@@ -30,16 +30,17 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/ortalyarts/frontendmentor-space-tourism-multipage-website)
+- Live Site URL: [Site Preview](https://frontendmentor-space-tourism-multipage-website.vercel.app/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup, native CSS3, Javascript ES6
-- CSS custom properties
+- CSS Animation
 - Mobile-first workflow
+- PerfectPixel
 - [React](https://reactjs.org/) - JS library
 - [react-router-dom](https://reactrouter.com/) - React router
 - [Framer motion](https://motion.dev/) - Animation library

@@ -229,6 +229,7 @@ main {
   color: white;
   font-family: var(--ffserif);
   font-size: 5.5rem;
+  letter-spacing:0;
   text-transform: uppercase;
 }
 .text-preset-9 {
@@ -784,7 +785,7 @@ img.img-technology {
     font-size: 9rem;
   }
   .page-content-home .content-left p, .page-content-home .content-left h1 span {
-    margin-top:3rem;
+    margin-top:2rem;
     display:block;
   }
   .page-content-home .content-left {
@@ -860,10 +861,13 @@ img.img-technology {
     max-width:100%;
   }
   .page-content-home {
-    padding-top:30vh;
+    padding-top:40vh;
   }
   .page-content-home .content-left {
     max-width:100%;
+  }
+  .page-content-home .big-round-btn {
+    justify-self: end;
   }
   .nav-destinations {
     justify-content: flex-start;
