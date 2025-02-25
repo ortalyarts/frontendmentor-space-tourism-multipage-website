@@ -18,11 +18,12 @@ export default function TechnologyContent ({items}){
                 window.addEventListener("resize", handleResize);
                 
                 if(width <= 1439){
-                    setImgSrc({src: `/src${currentItem.images.landscape}`, width: 768, height: 357})
+                    setImgSrc({src: `${currentItem.images.landscape}`, width: 768, height: 357})
                 }
                 else{
                     // setImgSrc(`/src${currentItem.images.portrait}`)
-                    setImgSrc({src: `/src${currentItem.images.portrait}`, width: 608, height: 600})
+                    setImgSrc({src: `${currentItem.images.portrait}`, width: 608, height: 600})
+                    // setImgSrc({src: `/src${currentItem.images.portrait}`, width: 608, height: 600})
                 }
                 return () => {
                     window.removeEventListener("resize", handleResize)
